@@ -22,8 +22,8 @@
             <div class="box-header">
                 <h3 class="box-title">Daftar Peserta</h3>
                 <div class="pull-right">
-                    <a href="#"><span class=" fa fa-plus"></span></a>
-                </div>
+                    <a data-toggle="modal" data-target="#myModal"><span class=" fa fa-plus"></span></a>
+                 </div>
             </div><!-- /.box-header -->
             <div class="box-body">
 
@@ -36,13 +36,16 @@
                                 <h4 class="modal-title" id="myModalLabel"></h4>
                             </div>
                             <div class="modal-body">
-                                <form class="form-control">
-                                    <label for="kelompok">Kelompok</label>
-                                    <select>
-                                        <option>kelompok Trial</option>
-                                        <option>kelompok Berbayar</option>
-                                        <option>kelompok Bimbel</option>
-                                    </select>
+                                <input type="text" class="form-control" placeholder="Nama"  autofocus> <br>
+                                    <input type="text" class="form-control" placeholder="Jenis Kelamin"  autofocus> <br>
+                                    <input type="text" class="form-control" placeholder="No HP"  autofocus> <br>
+                                    <form class="form-group">
+                                    <select class="form-control" >
+                                        <option> PILIH KELOMPOK </option>
+                                    <option>Kelompok IPA</option>
+                                    <option>Kelompok IPS</option>
+                                    <option>Kelompok IPC</option>
+                                </select>
                                 </form>
                             </div>
                             <div class="modal-footer">
@@ -62,7 +65,9 @@
                         <th style="text-align: center">No HP</th>
                         <th style="text-align: center">Kelompok Ujian</th>
                         <th style="text-align: center">Mengikuti Try Out</th>
-                      </tr>
+                        <th style="text-align: center">Ubah</th>
+
+                        </tr>
                     </thead>
                     <tbody>
                         <?php 
@@ -76,8 +81,36 @@
                         <td>08567897654</td>
                         <td><?= $arrays[$i]; ?></td>
                         <td><?= $i+2*$i?> kali</td>
+                        <td><button class="btn btn-warning glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal1"></button></td>
+                      
+                        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel"></h4>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" class="form-control" placeholder="Nama"  autofocus> <br>
+                                    <input type="text" class="form-control" placeholder="Jenis Kelamin"  autofocus> <br>
+                                    <input type="text" class="form-control" placeholder="No HP"  autofocus> <br>
+                                    <select class="form-control" >
+                                        <option> PILIH KELOMPOK </option>
+                                    <option>Kelompok IPA</option>
+                                    <option>Kelompok IPS</option>
+                                    <option>Kelompok IPC</option>
+                                </select>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                       </tr>
                         <?php }?>
+                      
                     </tbody>
                   </table>
             </div><!-- /.box-body -->
