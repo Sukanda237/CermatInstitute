@@ -3,6 +3,6 @@
 class TambahBimbel extends CI_Controller {
 	public function index()
 	{
-		$this->load->view('v_tambahBimbel');
+		$this->load->view('admin/v_tambahBimbel');
 	}
 }

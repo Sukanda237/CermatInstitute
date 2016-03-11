@@ -3,6 +3,6 @@
 class BankSoal extends CI_Controller {
 	public function index()
 	{
-		$this->load->view('v_bankSoal');
+		$this->load->view('admin/v_bankSoal');
 	}
 }

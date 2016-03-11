@@ -3,6 +3,6 @@
 class TambahTrial extends CI_Controller {
 	public function index()
 	{
-		$this->load->view('v_tambahTrial');
+		$this->load->view('admin/v_tambahTrial');
 	}
 }

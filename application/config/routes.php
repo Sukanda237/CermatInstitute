@@ -44,13 +44,20 @@ $route['trial'] = "trial";
 $route['berbayar'] = "berbayar";
 $route['bimbel'] = "bimbel";
 $route['bankSoal'] = "bankSoal";
-$route['cekJawaban'] = "cekJawaban";
+$route['jawaban'] = "jawaban";
 $route['waktuUjian'] = "waktuUjian";
 $route['tambahTrial'] = "tambahTrial";
 $route['tambahBerbayar'] = "tambahBerbayar";
 $route['tambahBimbel'] = "tambahBimbel";
-$route['tambahTryOut'] = "tambahTryOut";
-
+$route['tryOut'] = "tryOut";
+$route['tambahSoal'] = "tambahSoal";
+$route['daftar'] = "daftar";
+$route['login'] = "login";
+$route['mulaiujian'] = "mulaiujian";
+$route['nilai'] = "nilai";
+$route['profil'] = "profil";
+$route['ujian'] = "ujian";
+$route['peserta'] = "peserta";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

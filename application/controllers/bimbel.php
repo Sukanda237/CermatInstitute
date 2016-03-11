@@ -4,6 +4,6 @@ class Bimbel extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('v_bimbel');
+		$this->load->view('admin/v_bimbel');
 	}
 }
